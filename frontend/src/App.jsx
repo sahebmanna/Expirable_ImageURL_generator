@@ -72,7 +72,7 @@ function App() {
             <a href={finalUrl} target="_blank" rel="noreferrer">
               {finalUrl}
             </a>
-            <span>Expires in 60 seconds</span>
+            <span>Expires in 2 minutes</span>
           </div>
         )}
       </div>
