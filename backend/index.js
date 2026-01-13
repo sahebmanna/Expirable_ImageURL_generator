@@ -10,6 +10,10 @@ const Image = require('./models/Image.model');
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(cors({
+    origin: 'https://expirable-image-url-generator.vercel.app'
+
+}));
 
 
 // Connect to MongoDB
