@@ -37,7 +37,8 @@ function App() {
   const generateLink = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/generate-url/${uploadedId}`
+        //`http://localhost:5000/generate-url/${uploadedId}`
+        `${import.meta.env.VITE_API_URL}/generate-url/${uploadedId}`
       );
       setFinalUrl(res.data.url);
     } catch {
