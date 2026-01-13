@@ -49,7 +49,7 @@ app.post('/upload', upload.single('image'), async(req, res) => {
 // Generate Expirable URL
 app.get('/generate-url/:id', (req, res) => {
     const { id } = req.params;
-    const token = jwt.sign({ id }, JWT_SECRET, { expiresIn: '1m' });
+    const token = jwt.sign({ id }, JWT_SECRET, { expiresIn: '2m' });
 
     const protocol = req.protocol;
     const host = req.get('host');
